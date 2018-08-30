@@ -2,21 +2,20 @@
   "name": "preact-forms-helper",
   "version": "0.7.0",
   "description": "Create and control your forms in your Preact application more easily !",
-  "main": "src/index.js",
+  "main": "build/bundle.js",
   "scripts": {
-    "build": "babel src --out-dir lib",
+    "build": "webpack --mode production",
     "test": "jest"
   },
   "dependencies": {},
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-env": "^2.4.1",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-decorators": "^6.24.1",
-    "babel-plugin-transform-react-constant-elements": "^6.23.0",
-    "babel-plugin-transform-react-inline-elements": "^6.22.0",
-    "jest": "^22.4.3"
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "jest": "^22.4.3",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
   },
   "repository": {
     "type": "git",
